@@ -1,0 +1,45 @@
+.hero {
+    margin: 0 auto;
+    width: 1600px;
+    background-color: #2f303a;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/all-team.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--next-color);
+    margin: 0 auto;
+    padding-bottom: 30px;
+    max-width: 696px;
+  }
+  .hero__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    display: flex;
+    letter-spacing: 0.06em;
+    color: var(--next-color);
+    margin: 0 auto;
+    padding: 10px 32px;
+    border-radius: 4px;
+    background: var(--header-hover);
+    border: var(--bornon);
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+    &:hover, &:focus {
+      background: #188ce8;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+    }
+  }
+  

@@ -1,0 +1,41 @@
+.footer {
+    background-color: #2f303a;
+    margin: 0 auto;
+    width: 1600px;
+  }
+  .all-address .list{
+    width: 231px;
+  }
+  .adres-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--next-color);
+  }
+  .address__link {
+    width: 100%;
+    font-style: normal;
+  }
+  .adres-tel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .container__web-2 {
+    color: var(--next-color);
+  }
+  .footer {
+    padding-top: 60px;
+
+    .all-address__list {
+      margin-top: 20px;
+    }
+  }
+ 
+  .input-butoon {
+    display: flex;
+    justify-content: flex-end;
+  }
