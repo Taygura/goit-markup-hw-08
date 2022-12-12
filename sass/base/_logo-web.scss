@@ -7,6 +7,17 @@
   color: #2196f3;
   display: block;
   align-items: center;
+  @media screen and(max-width:1199px){
+width:134px;
+ padding-top:26px;
+padding-bottom: 26px;
+padding-left: 15px; 
+  }
+  @media screen and(max-width:767px){
+padding-top:16px;
+padding-bottom: 16px;
+padding-left: 15px;    
+  }
 }
 .container__web {
   font-family: 'Raleway', sans-serif;
