@@ -1,4 +1,8 @@
 .anjoy {
+  @media screen and(max-width:1199px){
+  padding: 0; 
+  margin: 0;   
+  }
     padding-top: 12px;
     margin-left: 93px;
     .anjoy-icon {
@@ -6,6 +10,10 @@
     }
   }
   .anjoy-header {
+    @media screen and(max-width:1199px){
+     text-align: center;
+     padding: 0; 
+      }
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -17,7 +25,6 @@
   .anjoy-input {
     margin-right: 12px;
     width: 358px;
-    height: 50px;
     padding: 15px;
     font-size: 15px;
     font-weight: bold;
@@ -26,6 +33,16 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: #2f303a;
+    @media screen and(max-width:1199px){
+      margin: 0;
+margin-bottom: 20px;
+width: 738px;      
+    }
+    @media screen and(max-width:767px){
+      margin: 0;
+margin-bottom: 20px;
+width: 450px;      
+    }
   }
   .anjoy-input::placeholder {
     font-weight: 400;
@@ -42,6 +59,8 @@
     outline: 0;
   }}
   .anjoy-butoon {
+    max-width: 200px;
+width: 100%;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -50,7 +69,6 @@
     text-align: center;
     border: none;
     padding-left: 28px;
-  
     letter-spacing: 0.06em;
     color: #ffffff;
     background: #2196f3;
@@ -66,3 +84,9 @@
     border-radius: 4px;
     outline: 0;
   }}
+  .input-butoon{
+    @media screen and(max-width:1199px){
+flex-direction: column;
+align-items: center;
+    }
+  }

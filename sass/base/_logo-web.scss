@@ -8,15 +8,26 @@
   display: block;
   align-items: center;
   @media screen and(max-width:1199px){
-width:134px;
  padding-top:26px;
 padding-bottom: 26px;
 padding-left: 15px; 
+margin-right: 88px;
+font-size: 24px;
+line-height: 28px;
   }
   @media screen and(max-width:767px){
 padding-top:16px;
 padding-bottom: 16px;
 padding-left: 15px;    
+font-size: 24px;
+line-height: 28px;
+  }
+}
+.address .container__logo {
+  @media screen and(max-width:1199px){
+    margin: 0 auto;
+padding: 0;
+
   }
 }
 .container__web {

@@ -13,6 +13,15 @@
   }
   
   .modal {
+    @media screen and(max-width:767PX){
+      top: 15%;
+      left: 15%;
+width: 450px;
+height: 609px;
+background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;   
+    }
     width: 528px;
     height: 581px;
     padding: 40px;
@@ -55,6 +64,10 @@
   }
 
   .modal-hed {
+    @media screen and(max-width:767PX){
+      line-height: 30px;
+      
+    }
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
@@ -67,7 +80,7 @@
     margin-top: 12px;
   
   }
-  .modal-wrapper {
+  .modal-wrapper {      
     position: relative;
   }
   .input-icon {
@@ -108,6 +121,9 @@
     outline: 0;
   }
   .modal-textarea {
+    @media screen and(max-width:767PX){
+      margin-bottom: 20px;
+    }
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -141,6 +157,11 @@
   }
 
   .check-line{
+        @media screen and(max-width:767PX){
+      line-height: 14px;  
+      margin: 0;
+      margin-bottom: 30px;
+    }
     height: 24px;
     margin: 20px 10px 30px; 
     display: flex;
@@ -173,6 +194,10 @@
   }
   
   .first-text {
+    @media screen and (max-width:767px){
+      font-size: 12px;
+      line-height: 14px;      
+    }
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -181,6 +206,10 @@
     margin-right: 5px;
   }
   .second-text {
+    @media screen and (max-width:767px){
+      font-size: 12px;
+      line-height: 14px;      
+    }
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
