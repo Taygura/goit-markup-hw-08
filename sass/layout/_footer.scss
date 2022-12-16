@@ -10,7 +10,6 @@
   align-items: baseline;
   .container {
     flex-direction: column;
-    background-color: #2f303a;
   }
   @media screen and (max-width:1199px){
     width: 768px;
@@ -20,9 +19,6 @@
     width: 480px;
     flex-direction: column;
   }
-
-
-
   .butoon-address__icon {
     fill: #ffffff;
   }
@@ -30,11 +26,13 @@
 .address__list {
   @media screen and(max-width:767px){
     margin: 0 auto;
+    margin-bottom: 60px;
   }
   list-style: none;
   padding-left: 0;
   margin: 0;
   list-style: none;
+  width: 232px;
 }
 .address__link-map {
   font-family: 'Roboto';
@@ -68,6 +66,11 @@
     color: var(--header-hover);
   }
 }
+.address__big-box{
+  @media screen and (min-width:480px) and(max-width:1199px){
+ flex-direction: column;
+}
+}
 .all-address__link {
   width: 231px;
   font-weight: 400;
@@ -85,11 +88,22 @@
 }
 .address .all-address {
   @media screen and(max-width:1199px){
+    margin-top: 60px;
+    margin-left: 76px;
+text-align: center;
+width: 232px;
+padding-bottom: 60px;
+display: flex;
+  }
+  @media screen and(max-width:767px){
     margin: 0 auto;
 text-align: center;
 width: 232px;
 padding-bottom: 60px;
+flex-direction: column;
   }
+  width: 570px;
+  display: flex;
   margin-right: 70px;
 
 }
@@ -102,10 +116,14 @@ padding-bottom: 60px;
   margin-bottom: 20px;
 }
 .address__butoon {
-  @media screen and(max-width:1199px){
+  @media screen and (min-width:768px)and(max-width:1199px){
     padding: 0;
-padding-bottom: 60px;
+    margin-left: 165px;
 text-align: center;    
+@media screen and(max-width:767px){
+  padding: 0;
+text-align: center;    
+}
   }  padding-top: 12px;
 }
 .address__butoon__list {

@@ -50,6 +50,12 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container__logo {
   margin-right: 93px;
   font-weight: 700;
@@ -164,12 +170,12 @@ p {
   border-radius: 50%;
   outline: none;
 }
-
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 }
+
 .menu-toggle:hover,
 .menu-toggle:focus {
   background-color: rgba(0, 0, 0, 0.1);
@@ -199,6 +205,11 @@ p {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+@media (min-width: 1200px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .menu-container.is-open {
@@ -861,10 +872,54 @@ p {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/all-team.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/all-team.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/all-team.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/all-team.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+    height: 400px;
+    padding: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_s@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_s@1x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_s@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_s@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    height: 400px;
+    padding: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_m@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_m@1x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_m@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_m@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1600px;
+    height: 600px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_b@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_b@1x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_b@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_b@2x.jpg);
+  }
 }
 
 .hero__title {
@@ -876,19 +931,16 @@ p {
   text-transform: uppercase;
   color: var(--next-color);
   margin: 0 auto;
+  padding-top: 200px;
   padding-bottom: 30px;
   max-width: 696px;
 }
 @media screen and (max-width: 1199px) {
   .hero__title {
-    font-weight: 900;
     font-size: 26px;
     line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
     width: 360px;
+    padding-top: 118px;
   }
 }
 
@@ -1443,7 +1495,6 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #2f303a;
 }
 @media screen and (max-width: 1199px) {
   .address {
@@ -1472,10 +1523,12 @@ p {
   padding-left: 0;
   margin: 0;
   list-style: none;
+  width: 232px;
 }
 @media screen and (max-width: 767px) {
   .address__list {
     margin: 0 auto;
+    margin-bottom: 60px;
   }
 }
 
@@ -1515,6 +1568,15 @@ p {
   color: var(--header-hover);
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .address__big-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .all-address__link {
   width: 231px;
   font-weight: 400;
@@ -1535,14 +1597,34 @@ p {
 }
 
 .address .all-address {
+  width: 570px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: 70px;
 }
 @media screen and (max-width: 1199px) {
+  .address .all-address {
+    margin-top: 60px;
+    margin-left: 76px;
+    text-align: center;
+    width: 232px;
+    padding-bottom: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (max-width: 767px) {
   .address .all-address {
     margin: 0 auto;
     text-align: center;
     width: 232px;
     padding-bottom: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1558,10 +1640,16 @@ p {
 .address__butoon {
   padding-top: 12px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .address__butoon {
     padding: 0;
-    padding-bottom: 60px;
+    margin-left: 165px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (max-width: 767px) {
+  .address__butoon {
+    padding: 0;
     text-align: center;
   }
 }
@@ -1935,7 +2023,14 @@ p {
 
 .anjoy {
   padding-top: 12px;
+  margin: 0;
   margin-left: 93px;
+}
+@media screen and (min-width: 1200px) {
+  .anjoy {
+    max-width: 570px;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1199px) {
   .anjoy {
@@ -2094,6 +2189,11 @@ p {
   outline: 0;
 }
 
+.input-butoon {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
 @media screen and (max-width: 1199px) {
   .input-butoon {
     -webkit-box-orient: vertical;

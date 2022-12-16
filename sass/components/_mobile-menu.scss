@@ -36,14 +36,10 @@
   border: none;
   border-radius: 50%;
   outline: none;
-}
-
-@media (min-width: 768px) {
-  .menu-toggle {
+  @media (min-width: 768px) {
     display: none;
-  }
 }
-
+}
 .menu-toggle:hover,
 .menu-toggle:focus {
   background-color: rgba(0, 0, 0, 0.1);
@@ -62,9 +58,11 @@
   z-index: 999;
   display: flex;
   flex-direction: column;
-
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  @media (min-width: 1200px) {
+    display: none;
+}
 }
 
 .menu-container.is-open {
