@@ -67,7 +67,6 @@ img {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #2196f3;
-  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -885,7 +884,7 @@ img {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .hero {
     width: 480px;
     height: 400px;
@@ -894,13 +893,13 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_s@1x.jpg);
   }
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_s@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_s@2x.jpg);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     width: 768px;
     height: 400px;
@@ -909,7 +908,7 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_m@1x.jpg);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_m@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_m@2x.jpg);
@@ -939,7 +938,6 @@ img {
   text-transform: uppercase;
   color: var(--next-color);
   margin: 0 auto;
-  padding-top: 200px;
   padding-bottom: 30px;
   max-width: 696px;
 }
@@ -1499,6 +1497,17 @@ footer {
     text-align: center;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 @media screen and (min-width: 1200px) {
   .address .container {
     display: -webkit-box;
@@ -1534,11 +1543,9 @@ footer {
   padding-left: 0;
   margin: 0;
   list-style: none;
-  width: 232px;
 }
 @media screen and (max-width: 767px) {
   .address__list {
-    margin: 0 auto;
     margin-bottom: 60px;
   }
 }
@@ -1550,7 +1557,7 @@ footer {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color, color;
   transition-property: background-color, color;
   -webkit-transition-duration: 250ms;
@@ -1593,8 +1600,6 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 232px;
-    margin: 0;
   }
 }
 
@@ -1664,7 +1669,6 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .address__butoon {
     padding: 0;
-    width: 206px;
     margin: 0;
     margin-left: 165px;
     text-align: center;
@@ -2094,14 +2098,7 @@ footer {
   border-radius: 4px;
   background-color: #2f303a;
 }
-@media screen and (max-width: 1199px) {
-  .anjoy-input {
-    margin: 0;
-    margin-bottom: 20px;
-    width: 738px;
-  }
-}
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .anjoy-input {
     margin: 0;
     margin-bottom: 20px;
