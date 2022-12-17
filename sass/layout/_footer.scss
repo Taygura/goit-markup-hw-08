@@ -1,4 +1,4 @@
-.footer {
+footer {
   padding-bottom: 60px;
 }
 .address {
@@ -6,10 +6,14 @@
   background-color: #2f303a;
   padding-bottom: 60px;
   margin: 0 auto;
-  display: flex;
   align-items: baseline;
   .container {
-    flex-direction: column;
+    @media screen and(min-width: 1200px){
+    display: flex;
+  }
+}
+  .container__logo{
+    margin: 0;
   }
   @media screen and (max-width:1199px){
     width: 768px;
@@ -23,6 +27,7 @@
     fill: #ffffff;
   }
 }
+
 .address__list {
   @media screen and(max-width:767px){
     margin: 0 auto;

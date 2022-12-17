@@ -28,6 +28,11 @@
 }
 
 .header-list__link {
+  @media screen and(max-width:1199px){
+    font-size: 12px;
+line-height: 14px;
+    
+  }
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
