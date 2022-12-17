@@ -7,6 +7,9 @@ footer {
   padding-bottom: 60px;
   margin: 0 auto;
   align-items: baseline;
+  @media screen and(min-width:480px){
+    text-align: center;
+  }
   .container {
     @media screen and(min-width: 1200px){
     display: flex;
@@ -16,11 +19,10 @@ footer {
     margin: 0;
   }
   @media screen and (max-width:1199px){
-    width: 768px;
     flex-direction: column;
   }
   @media screen and (max-width:767px){
-    width: 480px;
+
     flex-direction: column;
   }
   .butoon-address__icon {
@@ -72,8 +74,14 @@ footer {
   }
 }
 .address__big-box{
-  @media screen and (min-width:480px) and(max-width:1199px){
+      @media screen and(min-width: 1200px){
+    margin-right: 70px;
+  }
+  @media screen and (min-width:768px) and(max-width:1199px){
  flex-direction: column;
+ align-items: center;
+ width: 232px;
+ margin: 0;
 }
 }
 .all-address__link {
@@ -123,6 +131,8 @@ flex-direction: column;
 .address__butoon {
   @media screen and (min-width:768px)and(max-width:1199px){
     padding: 0;
+    width: 206px;
+    margin: 0;
     margin-left: 165px;
 text-align: center;    
 @media screen and(max-width:767px){
