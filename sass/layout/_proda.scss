@@ -1,6 +1,6 @@
 .proda {
   padding-top: 94px;
-  padding-bottom: 94px;
+
 }
 .proda__list {
  gap:30px;
@@ -8,6 +8,11 @@
   margin: 0;
   display: flex;
   list-style: none;
+  @media screen and (min-width:320px){
+    width: 320px;
+        flex-wrap: wrap;
+    margin: 0;
+  }
   @media screen and (min-width: 480px) {
     width: 480px;
     flex-wrap: wrap;

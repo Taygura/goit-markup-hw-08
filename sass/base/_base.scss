@@ -8,8 +8,9 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+
     @media screen and (min-width: 480px) {
-    width:  480px;
+width: 480px;
     margin: 0 auto;
     padding:0;
     padding-left: 15px;
@@ -26,6 +27,12 @@ body {
   @media screen and (min-width: 1200px) {
     margin: 0 auto;
     width: 1200px;
+  }
+    @media screen and (min-width: 320px)and (max-width:479px){
+width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
   }
 }
 a {
