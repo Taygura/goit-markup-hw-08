@@ -130,15 +130,15 @@
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__item">
-              <img src="./images/work/img_b@1x.jpg" srcset="./images/work/img_b@1x.jpg 1x, ./images/work/img_b@2x.jpg 2x" alt="computer" width="370" />
+              <img src="./images/work/img_b@1x.jpg" srcset="./images/work/img_b@1x.jpg 1x, ./images/work/img_b@2x.jpg 2x" alt="computer"loading="lazy"/>
               <div class="work__tumb"><span class="work__text">ДЕСКТОПНІ ДОДАТКИ</span></div>
             </li>
             <li class="work__item">
-              <img src="./images/work/img_b@1x.jpg-1" srcset="./images/work/img_b@1x-1.jpg 1x, ./images/work/img_b@2x-1.jpg 2x" alt="phone" width="370" />
+              <img src="./images/work/img_b@1x.jpg-1" srcset="./images/work/img_b@1x-1.jpg 1x, ./images/work/img_b@2x-1.jpg 2x" alt="phone"loading="lazy"/>
               <div class="work__tumb"><span class="work__text">МОБІЛЬНІ ДОДАТКИ</span></div>
             </li>
             <li class="work__item">
-              <img src="./images/work/img_b@1x-2.jpg" srcset="./images/work/img_b@1x-2.jpg 1x, ./images/work/img_b@2x-2.jpg 2x"  alt="tublet" width="370" />
+              <img src="./images/work/img_b@1x-2.jpg" srcset="./images/work/img_b@1x-2.jpg 1x, ./images/work/img_b@2x-2.jpg 2x"  alt="tublet"loading="lazy"/>
               <div class="work__tumb"><span class="work__text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</span></div>
             </li>
           </ul>
@@ -150,16 +150,13 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__list__link">
-              <img 
-              srcset="
-              ./images/team/img_270.jpg 270w, 
-              ./images/team/img_354.jpg 354w,
-              ./images/team/img_450.jpg 450w,
-              ./images/team/img_540.jpg 540w,
-              ./images/team/img_708.jpg 708w,
-              ./images/team/img_900.jpg 900w"
-              size="(min-width: 1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-              src="./images/team/img.jpg 450w" alt="Christopher_Walker" width="450" />
+              <picture>
+                <source srcset="./images/team/img_270.jpg 1x, ./images/team/img_540.jpg 2x" media="(min-width: 1200px)"/>
+                <source srcset="./images/team/img_354.jpg 1x, ./images/team/img_708.jpg 2x" media="(min-width: 768px)"/>
+                <source srcset="./images/team/img_450.jpg 1x, ./images/team/img_900.jpg 2x" media="(min-width: 480px)"/>
+                <img 
+              src="./images/team/img_450.jpg" alt="Christopher_Walker" loading="lazy"/>
+              </picture>
               <h3 class="team__paragrahp">Ігор Дем'яненко</h3>
               <p class="team__text">Product Designer</p>
               <ul class="team__list-icons">
@@ -194,18 +191,13 @@
               </ul>
             </li>
             <li class="team__list__link">
-              <img 
-              srcset="
-              ./images/team/img_270-1.jpg 270w, 
-              ./images/team/img_354-1.jpg 354w,
-              ./images/team/img_450-1.jpg 450w,
-              ./images/team/img_540-1.jpg 540w,
-              ./images/team/img_708-1.jpg 708w,
-              ./images/team/img_900-1.jpg 900w"
-
-              size="(min-width: 1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw" 
-              src="./images/team/img_.jpg 450w" 
-              alt="Kylie_Evans" width="450" />
+              <picture>
+                <source srcset="./images/team/img_270-1.jpg 1x, ./images/team/img_540-1.jpg 2x" media="(min-width: 1200px)"/>
+                <source srcset="./images/team/img_354-1.jpg 1x, ./images/team/img_708-1.jpg 2x" media="(min-width: 768px)"/>
+                <source srcset="./images/team/img_450-1.jpg 1x, ./images/team/img_900-1.jpg 2x" media="(min-width: 480px)"/>
+                <img 
+              src="./images/team/img_450-1.jpg" alt="Christopher_Walker" loading="lazy"/>
+              </picture>
               <h3 class="team__paragrahp">Ольга Рєпіна</h3>
               <p class="team__text">Frontend Developer</p>
               <ul class="team__list-icons">
@@ -240,18 +232,13 @@
               </ul>
             </li>
             <li class="team__list__link">
-              <img 
-              srcset="
-              ./images/team/img_270-2.jpg 270w, 
-              ./images/team/img_354-2.jpg 354w,
-              ./images/team/img_450-2.jpg 450w,
-              ./images/team/img_540-2.jpg 540w,
-              ./images/team/img_708-2.jpg 708w,
-              ./images/team/img_900-2.jpg 900w"
-
-              size="(min-width: 1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-              src="./images/team/img_.jpg 450w" 
-              alt="Ryan_Harris" width="450" />
+              <picture>
+                <source srcset="./images/team/img_270-2.jpg 1x, ./images/team/img_540-2.jpg 2x" media="(min-width: 1200px)"/>
+                <source srcset="./images/team/img_354-2.jpg 1x, ./images/team/img_708-2.jpg 2x" media="(min-width: 768px)"/>
+                <source srcset="./images/team/img_450-2.jpg 1x, ./images/team/img_900-2.jpg 2x" media="(min-width: 480px)"/>
+                <img 
+              src="./images/team/img_450-2.jpg" alt="Christopher_Walker" loading="lazy"/>
+              </picture>
               <h3 class="team__paragrahp">Микола Тарасов</h3>
               <p class="team__text">Marketing</p>
               <ul class="team__list-icons">
@@ -286,18 +273,13 @@
               </ul>
             </li>
             <li class="team__list__link">
-              <img 
-              srcset="
-              ./images/team/img_270-3.jpg 270w, 
-              ./images/team/img_354-3.jpg 354w,
-              ./images/team/img_450-3.jpg 450w,
-              ./images/team/img_540-3.jpg 540w,
-              ./images/team/img_708-3.jpg 708w,
-              ./images/team/img_900-3.jpg 900w"
-
-              size="(min-width: 1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-               src="./images/team/img_.jpg"
-              alt="Tyler_Moore" width="450" />
+              <picture>
+                <source srcset="./images/team/img_270-3.jpg 1x, ./images/team/img_540-3.jpg 2x" media="(min-width: 1200px)"/>
+                <source srcset="./images/team/img_354-3.jpg 1x, ./images/team/img_708-3.jpg 2x" media="(min-width: 768px)"/>
+                <source srcset="./images/team/img_450-3.jpg 1x, ./images/team/img_900-3.jpg 2x" media="(min-width: 480px)"/>
+                <img 
+              src="./images/team/img_450-3.jpg" alt="Christopher_Walker" loading="lazy"/>
+              </picture>
               <h3 class="team__paragrahp">Михайло Єрмаков</h3>
               <p class="team__text">UI Designer</p>
               <ul class="team__list-icons">

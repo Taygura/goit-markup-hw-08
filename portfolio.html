@@ -54,16 +54,10 @@
           </li>
         </ul>
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg
-            width="40"
-            height="40"
-            class="mobile-menu-icon">
-            <use href="./images/icons.svg#icon-menu_40px">
-            </use>
+          <svg width="40" height="40" class="mobile-menu-icon">
+            <use href="./images/icons.svg#icon-menu_40px"></use>
           </svg>
         </button>
-      </div>
-    </header>
       </div>
     </header>
     <!--main-->
@@ -102,12 +96,21 @@
           <ul class="project__job-list">
             <li class="job-list__item">
               <div class="project__img-wrapper">
-                <img
-                  class="project__img"
-                  src="./images/Технохряк.jpg"
-                  alt="Технокряк"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/projact/img_b@1x.jpg 1x, ./images/projact/img_b@2x.jpg 2x"
+                    media="(min-width: 1200px)" 
+                  />
+                  <source
+                    srcset="./images/projact/img_m@1x.jpg 1x, ./images/projact/img_m@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/projact/img_s@1x.jpg 1x, ./images/projact/img_s@2x.jpg 2x"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/projact/img_s@1x.jpg" alt="Christopher_Walker" loading="lazy"/>
+                </picture>
                 <div class="project__description">
                   <span class="project__img-text"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -123,12 +126,21 @@
             </li>
             <li class="job-list__item">
               <div class="project__img-wrapper">
-                <img
-                  class="project__img"
-                  src="./images/Постер_New_Orlean_vs_Golden_Star.jpg"
-                  width="370"
-                  alt="Постер_New Orlean_vs_Golden_Star"
-                />
+                <picture>
+                  <source
+                    srcset="./images/projact/img_b@1x-1.jpg 1x, ./images/projact/img_b@2x-1.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/projact/img_m@1x-1.jpg 1x, ./images/projact/img_m@2x-1.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/projact/img_s@1x-1.jpg 1x, ./images/projact/img_s@2x-1.jpg 2x"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/projact/img_s@1x-1.jpg" alt="Christopher_Walker" loading="lazy"/>
+                </picture>
                 <div class="project__description">
                   <span class="project__img-text"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -137,7 +149,6 @@
                   >
                 </div>
               </div>
-
               <div class="project__aftograv">
                 <h2 class="project__title">Постер New Orlean vs Golden Star</h2>
                 <p class="project__paragrahp">Дизайн</p>
@@ -145,12 +156,21 @@
             </li>
             <li class="job-list__item">
               <div class="project__img-wrapper">
-                <img
-                  class="project__img"
-                  src="./images/Ресторан_Seafood.jpg"
-                  alt="Ресторан_Seafood."
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/projact/img_b@1x-2.jpg 1x, ./images/projact/img_b@2x-2.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/projact/img_m@1x-2.jpg 1x, ./images/projact/img_m@2x-2.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/projact/img_s@1x-2.jpg 1x, ./images/projact/img_s@2x-2.jpg 2x"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/projact/img_s@1x-2.jpg" alt="Christopher_Walker" loading="lazy"/>
+                </picture>
                 <div class="project__description">
                   <span class="project__img-text"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -167,12 +187,21 @@
             </li>
             <li class="job-list__item">
               <div class="project__img-wrapper">
-                <img
-                  class="project__img"
-                  src="./images/Проєкт_Prime.jpg"
-                  alt="Проєкт_Prime"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/projact/img_b@1x-3.jpg 1x, ./images/projact/img_b@2x-3.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/projact/img_m@1x-3.jpg 1x, ./images/projact/img_m@2x-3.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/projact/img_s@1x-3.jpg 1x, ./images/projact/img_s@2x-3.jpg 2x"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/projact/img_s@1x-3.jpg" alt="Christopher_Walker" loading="lazy"/>
+                </picture>
                 <div class="project__description">
                   <span class="project__img-text"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -181,7 +210,6 @@
                   >
                 </div>
               </div>
-
               <div class="project__aftograv">
                 <h2 class="project__title">Проєкт Prime</h2>
                 <p class="project__paragrahp">Маркетинг</p>
@@ -189,12 +217,21 @@
             </li>
             <li class="job-list__item">
               <div class="project__img-wrapper">
-                <img
-                  class="project__img"
-                  src="./images/Проєкт_Boxes.jpg"
-                  alt="Проєкт_Boxes"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/projact/img_b@1x-4.jpg 1x, ./images/projact/img_b@2x-4.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/projact/img_m@1x-4.jpg 1x, ./images/projact/img_m@2x-4.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/projact/img_s@1x-4.jpg 1x, ./images/projact/img_s@2x-4.jpg 2x"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/projact/img_s@1x-4.jpg" alt="Christopher_Walker" loading="lazy"/>
+                </picture>
                 <div class="project__description">
                   <span class="project__img-text"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -210,12 +247,21 @@
             </li>
             <li class="job-list__item">
               <div class="project__img-wrapper">
-                <img
-                  class="project__img"
-                  src="./images/Inspiration_has_no_Borders.jpg"
-                  alt="nspiration_has_no_Borders"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/projact/img_b@1x-5.jpg 1x, ./images/projact/img_b@2x-5.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/projact/img_m@1x-5.jpg 1x, ./images/projact/img_m@2x-5.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/projact/img_s@1x-5.jpg 1x, ./images/projact/img_s@2x-5.jpg 2x"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/projact/img_s@1x-5.jpg" alt="Christopher_Walker" loading="lazy"/>
+                </picture>
                 <div class="project__description">
                   <span class="project__img-text"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -231,12 +277,21 @@
             </li>
             <li class="job-list__item">
               <div class="project__img-wrapper">
-                <img
-                  class="project__img"
-                  src="./images/Видання_Limited_Edition.jpg"
-                  alt="Видання_Limited_Edition"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/projact/img_b@1x-6.jpg 1x, ./images/projact/img_b@2x-6.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/projact/img_m@1x-6.jpg 1x, ./images/projact/img_m@2x-6.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/projact/img_s@1x-6.jpg 1x, ./images/projact/img_s@2x-6.jpg 2x"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/projact/img_s@1x-6.jpg" alt="Christopher_Walker" loading="lazy"/>
+                </picture>
                 <div class="project__description">
                   <span class="project__img-text"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -245,7 +300,6 @@
                   >
                 </div>
               </div>
-
               <div class="project__aftograv">
                 <h2 class="project__title">Видання Limited Edition</h2>
                 <p class="project__paragrahp">Дизайн</p>
@@ -253,12 +307,21 @@
             </li>
             <li class="job-list__item">
               <div class="project__img-wrapper">
-                <img
-                  class="project__img"
-                  src="./images/Проєкт_LAB.jpg"
-                  alt="Проєкт_LAB"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/projact/img_b@1x-7.jpg 1x, ./images/projact/img_b@2x-7.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/projact/img_m@1x-7.jpg 1x, ./images/projact/img_m@2x-7.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/projact/img_s@1x-7.jpg 1x, ./images/projact/img_s@2x-7.jpg 2x"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/projact/img_s@1x-7.jpg" alt="Christopher_Walker" loading="lazy"/>
+                </picture>
                 <div class="project__description">
                   <span class="project__img-text"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -267,7 +330,6 @@
                   >
                 </div>
               </div>
-
               <div class="project__aftograv">
                 <h2 class="project__title">Проєкт LAB</h2>
                 <p class="project__paragrahp">Маркетинг</p>
@@ -275,12 +337,21 @@
             </li>
             <li class="job-list__item">
               <div class="project__img-wrapper">
-                <img
-                  class="project__img"
-                  src="./images/Growing_Business.jpg"
-                  alt="Growing_Business"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/projact/img_b@1x-8.jpg 1x, ./images/projact/img_b@2x-8.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/projact/img_m@1x-8.jpg 1x, ./images/projact/img_m@2x-8.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/projact/img_s@1x-8.jpg 1x, ./images/projact/img_s@2x-8.jpg 2x"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/projact/img_s@1x-8.jpg" alt="Christopher_Walker" loading="lazy"/>
+                </picture>
                 <div class="project__description">
                   <span class="project__img-text"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -302,61 +373,61 @@
     <!--footer-->
     <footer class="address">
       <div class="container">
-          <div class="address__big-box">
-            <a class="container__logo" href="./webstudio"
-              >Web<span class="container__web-2">Studio</span>
-            </a>
-            <ul class="address__list">
-              <li class="address__item">
-                <a
-                  class="address__link-map"
-                  href="https://goo.gl/maps/J3TThGuoo7Lbi47X8"
-                  target="_blank"
-                  rel="noopener norefferer nofollow"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li class="address__item">
-                <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
-              <li class="address__item">
-                <a class="address__link" href="tel+380961111111">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </div>
-            <div class="address__butoon">
-              <h2 class="address__butoon__title">ПРИЄДНУЙТЕСЬ</h2>
-              <ul class="address__butoon__list">
-                <li class="address__butoon__item">
-                  <a href="" class="address__butoon__link">
-                    <svg class="address__butoon__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="address__butoon__item">
-                  <a href="" class="address__butoon__link">
-                    <svg class="address__butoon__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="address__butoon__item">
-                  <a href="" class="address__butoon__link">
-                    <svg class="address__butoon__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="address__butoon__item">
-                  <a href="" class="address__butoon__link">
-                    <svg class="address__butoon__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+        <div class="address__big-box">
+          <a class="container__logo" href="./webstudio"
+            >Web<span class="container__web-2">Studio</span>
+          </a>
+          <ul class="address__list">
+            <li class="address__item">
+              <a
+                class="address__link-map"
+                href="https://goo.gl/maps/J3TThGuoo7Lbi47X8"
+                target="_blank"
+                rel="noopener norefferer nofollow"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="address__item">
+              <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="address__item">
+              <a class="address__link" href="tel+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+        <div class="address__butoon">
+          <h2 class="address__butoon__title">ПРИЄДНУЙТЕСЬ</h2>
+          <ul class="address__butoon__list">
+            <li class="address__butoon__item">
+              <a href="" class="address__butoon__link">
+                <svg class="address__butoon__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="address__butoon__item">
+              <a href="" class="address__butoon__link">
+                <svg class="address__butoon__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="address__butoon__item">
+              <a href="" class="address__butoon__link">
+                <svg class="address__butoon__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="address__butoon__item">
+              <a href="" class="address__butoon__link">
+                <svg class="address__butoon__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="anjoy">
           <h2 class="anjoy-header">Підпишіться на розсилку</h2>
           <div class="input-butoon">
@@ -375,18 +446,18 @@
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg
-          width="40"
-          height="40"
-          class="mobile-icon">
-          <use href="./images/icons.svg#icon-close_40px">
-          </use>
+        <svg width="40" height="40" class="mobile-icon">
+          <use href="./images/icons.svg#icon-close_40px"></use>
         </svg>
       </button>
 
       <ul class="mobile-menu list">
-        <li class="mobile-menu-item"><a href="./index.html" class="mobile-menu-link link">Студія</a></li>
-        <li class="mobile-menu-item"><a href="./portfolio.html" class="mobile-menu-link link">Портфоліо</a></li>
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="mobile-menu-link link">Студія</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="mobile-menu-link link">Портфоліо</a>
+        </li>
         <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Контакти</a></li>
       </ul>
       <ul class="mobile-contacts list">

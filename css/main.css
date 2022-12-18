@@ -921,6 +921,16 @@ img {
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .hero {
     width: 320px;
+    height: 400px;
+    padding: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_s@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_s@1x.jpg);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 479px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (max-width: 479px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_s@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_s@2x.jpg);
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -1606,6 +1616,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 20px;
   }
 }
 .address .butoon-address__icon {
